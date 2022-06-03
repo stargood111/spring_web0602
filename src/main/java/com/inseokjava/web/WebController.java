@@ -272,44 +272,37 @@ public class WebController {
          order1priceint = 0;  
       } else {
          order1priceint = Integer.parseInt(order1price);
-         orderDto.setCname(order1);
-         orderDto.setCprice(order1priceint);
-         orderDtos.add(orderDto);
+        
       }
       if(order2price.equals(" "))  {
          order2priceint = 0;
       } else {
          order2priceint = Integer.parseInt(order2price);
-         orderDto.setCname(order2);
-         orderDto.setCprice(order2priceint);
+      
       }
       if(order3price.equals(" "))  {
          order3priceint = 0;
       } else {
          order3priceint = Integer.parseInt(order3price);
-         orderDto.setCname(order3);
-         orderDto.setCprice(order3priceint);
+        
       }
       if(order4price.equals(" "))  {
          order4priceint = 0;
       } else {
          order4priceint = Integer.parseInt(order4price);
-         orderDto.setCname(order4);
-         orderDto.setCprice(order4priceint);
+    
       }
       if(order5price.equals(" "))  {
          order5priceint = 0;
       } else {
          order5priceint = Integer.parseInt(order5price);
-         orderDto.setCname(order5);
-         orderDto.setCprice(order5priceint);
+     
       }
       if(order6price.equals(" "))  {
          order6priceint = 0;
       } else {
          order6priceint = Integer.parseInt(order6price);
-         orderDto.setCname(order6);
-         orderDto.setCprice(order6priceint);
+      
       }
       
       
@@ -317,37 +310,37 @@ public class WebController {
           order1cupint = 0;
        } else {
           order1cupint = Integer.parseInt(order1cup);
-          orderDto.setCcup(order1cupint);
+     
        }
       if(order2cup.equals(" "))  {
           order2cupint = 0;
        } else {
           order2cupint = Integer.parseInt(order2cup);
-          orderDto.setCcup(order2cupint);
+         
        }
       if(order3cup.equals(" "))  {
           order3cupint = 0;
        } else {
           order3cupint = Integer.parseInt(order3cup);
-          orderDto.setCcup(order3cupint);
+      
        }
       if(order4cup.equals(" "))  {
           order4cupint = 0;
        } else {
           order4cupint = Integer.parseInt(order4cup);
-          orderDto.setCcup(order4cupint);
+      
        }
       if(order5cup.equals(" "))  {
           order5cupint = 0;
        } else {
           order5cupint = Integer.parseInt(order5cup);
-          orderDto.setCcup(order5cupint);
+     
        }
       if(order6cup.equals(" "))  {
           order6cupint = 0;
        } else {
           order6cupint = Integer.parseInt(order6cup);
-          orderDto.setCcup(order6cupint);
+         
        }
       
     
@@ -363,6 +356,39 @@ public class WebController {
             order1cupint, order2cupint, order3cupint, order4cupint, order5cupint, order6cupint, 
             order1priceint, order2priceint, order3priceint, order4priceint, order5priceint, order6priceint, orderallprice);
       
+      if(!order1cup.equals(" "))  {
+    	  dao.orderDao(request.getParameter("order1"),order1cupint,order1priceint);
+       }else {
+    	   
+       }
+      if(!order2cup.equals(" "))  {
+    	  dao.orderDao(request.getParameter("order2"),order2cupint,order2priceint);
+       }else {
+    	   
+       }
+      if(!order3cup.equals(" "))  {
+    	  dao.orderDao(request.getParameter("order3"),order3cupint,order3priceint);
+       }else {
+    	   
+       }
+      if(!order4cup.equals(" "))  {
+    	  dao.orderDao(request.getParameter("order4"),order4cupint,order4priceint);
+       }else {
+    	   
+       }
+      if(!order5cup.equals(" "))  {
+    	  dao.orderDao(request.getParameter("order5"),order5cupint,order5priceint);
+       }else {
+    	   
+       }
+      if(!order6cup.equals(" "))  {
+    	  dao.orderDao(request.getParameter("order6"),order6cupint,order6priceint);
+       }else {
+    	   
+       }
+         
+       
+    
       model.addAttribute("orderlist", orderDtos);
       model.addAttribute("orderallprice", orderallprice);
       
