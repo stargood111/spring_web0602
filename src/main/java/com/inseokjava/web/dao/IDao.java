@@ -27,10 +27,8 @@ public interface IDao {
 			String hname4, String hname5, String hname6 ,int hcup1 ,int hcup2 ,int hcup3
 			,int hcup4, int hcup5, int hcup6,int hprice1,int hprice2,int hprice3
 			,int hprice4,int hprice5,int hprice6,int hallprice);
+	
+	public void orderDao(String cname, int ccup, int cprice);
 //	public ArrayList<MenuDto> MenuDao();
-	public void menuDao(String parameter, String parameter2, String parameter3, String parameter4, String parameter5,
-			String parameter6, String order1cup, String order2cup, String order3cup, String order4cup, String order5cup,
-			String order6cup, int order1priceint, int order2priceint, int order3priceint, int order4priceint,
-			int order5priceint, int order6priceint, int orderallprice);
 
 }

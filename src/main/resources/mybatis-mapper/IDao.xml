@@ -58,5 +58,7 @@
 		 #{param12}, #{param13}, #{param14}, #{param15}, #{param16}, #{param17}, #{param18}, #{param19})
 	</insert>
 
-
+	<insert id = "orderDao">
+		INSERT INTO corder(cname, ccup, cprice) VALUES (#{param1}, #{param2}, #{param3})
+	</insert>
 </mapper>

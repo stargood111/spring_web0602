@@ -56,6 +56,14 @@
    priceNum = document.getElementById('price6').value;      
    document.getElementById('resultPrice6').value = parseInt(priceNum) * parseInt(orderNum);
    }
+   function printName7() {
+	   name = document.getElementById('name6').value;      
+	   document.getElementById('result6').value = name;      
+	   orderNum = document.getElementById('quantity6').value;      
+	   document.getElementById('resultNum6').value = orderNum;
+	   priceNum = document.getElementById('price6').value;      
+	   document.getElementById('resultPrice6').value = parseInt(priceNum) * parseInt(orderNum);
+	   }
  
    
 
@@ -79,7 +87,7 @@
 		<input type = "text" name = "imeprice" id = "price1" value ="1800" size= "5" readonly>원
 	  <input type = "text" id = "name1" value = "아메리카노(ICE)" hidden = "true">
 	  <select name="ame" id="quantity1">
-         <option>1</option><option>2</option><option>3</option><option>4</option><option>4</option> 
+         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option> 
 		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>    
       </select>
       <input type="button" value="선택" onclick="printName1()">
@@ -89,7 +97,7 @@
 	<input type = "text" name = "coldprice" id = "price2" value ="3300" size= "5" readonly>원
 	  <input type = "text" id = "name2" value = "콜드브루(ICE)" hidden = "true">
 	  <select name="cold" id="quantity2">
-         <option>1</option><option>2</option><option>3</option><option>4</option><option>4</option> 
+         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option> 
 		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>    
       </select>
         <input type="button" value="선택" onclick="printName2()">
@@ -99,7 +107,7 @@
 	  <input type = "text" name = "caramelprice" id = "price3" value ="3300" size= "5" readonly>원
 	  <input type = "text" id = "name3" value = "카라멜마끼아또(ICE)" hidden = "true">
 	  <select name="caramel" id="quantity3">
-         <option>1</option><option>2</option><option>3</option><option>4</option><option>4</option> 
+         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option> 
 		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>    
       </select>
       <input type="button" value="선택" onclick="printName3()">
@@ -113,7 +121,7 @@
 	  <input type = "text" name = "caramelprice" id = "price4" value ="3000" size= "5" readonly>원
 	  <input type = "text" id = "name4" value = "바닐라라떼(ICE)" hidden = "true">
 	  <select name="banila" id="quantity4">
-         <option>1</option><option>2</option><option>3</option><option>4</option><option>4</option> 
+         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option> 
 		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>    
       </select>
       <input type="button" value="선택" onclick="printName4()">
@@ -123,7 +131,7 @@
 	  	  <input type = "text" name = "caramelprice" id = "price5" value ="3800" size= "5" readonly>원
 	  <input type = "text" id = "name5" value = "콜드브루라떼(ICE)" hidden = "true">
 	  <select name="coldlatte" id="quantity5">
-         <option>1</option><option>2</option><option>3</option><option>4</option><option>4</option> 
+         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option> 
 		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>    
       </select>
       <input type="button" value="선택" onclick="printName5()">
@@ -132,7 +140,7 @@
 	 	  <input type = "text" name = "caramelprice" id = "price6" value ="2500" size= "5" readonly>원
 	  <input type = "text" id = "name6" value = "카페라떼(ICE)" hidden = "true">
 	  <select name="latte" id="quantity6">
-         <option>1</option><option>2</option><option>3</option><option>4</option><option>4</option> 
+         <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option> 
 		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>    
       </select>
       <input type="button" value="선택" onclick="printName6()">
@@ -144,34 +152,37 @@
 	
    <form action = "menuOk" align = "center">
       <input type="text" name="order1" id="result1" value=" " size="10" readonly>
-      수량<input type="text" name="order1num" id="resultNum1" value="" size="10" readonly>
-    	가격<input type = "text" name = order1price id ="resultPrice1" value= "" size ="10" readonly>원
+      수량<input type="text" name="order1cup" id="resultNum1" value=" " size="10" readonly>
+    	가격<input type = "text" name = order1price id ="resultPrice1" value=" " size ="10" readonly>원
     <br>
     
       <input type="text" name="order2" id="result2" value=" " size = "10" readonly>
-       수량<input type="text" name="order2num" id="resultNum2" value="" size="10" readonly>
-    	가격<input type = "text" name = order2price id ="resultPrice2" value= "" size ="10" readonly>원
+       수량<input type="text" name="order2cup" id="resultNum2" value=" " size="10" readonly>
+    	가격<input type = "text" name = order2price id ="resultPrice2" value=" " size ="10" readonly>원
 	<br>
     	
       <input type="text" name="order3" id="result3" value=" " size = "10" readonly>
-      수량<input type="text" name="order3num" id="resultNum3" value="" size="10" readonly>
-      가격<input type = "text" name = order3price id ="resultPrice3" value= "" size ="10" readonly>원
+      수량<input type="text" name="order3cup" id="resultNum3" value=" " size="10" readonly>
+      가격<input type = "text" name = order3price id ="resultPrice3" value=" " size ="10" readonly>원
   	<br>
    <input type="text" name="order4" id="result4" value=" " size="10" readonly>
-      수량<input type="text" name="order4num" id="resultNum4" value="" size="10" readonly>
-    	가격<input type = "text" name = order4price id ="resultPrice4" value= "" size ="10" readonly>원
+      수량<input type="text" name="order4cup" id="resultNum4" value=" " size="10" readonly>
+    	가격<input type = "text" name = order4price id ="resultPrice4" value=" " size ="10" readonly>원
     <br>
     
       <input type="text" name="order5" id="result5" value=" " size = "10" readonly>
-       수량<input type="text" name="order5num" id="resultNum5" value=" " size="10" readonly>
-    	가격<input type = "text" name = order5price id ="resultPrice5" value= "" size ="10" readonly>원
+       수량<input type="text" name="order5cup" id="resultNum5" value=" " size="10" readonly>
+    	가격<input type = "text" name = order5price id ="resultPrice5" value=" " size ="10" readonly>원
 	<br>
     	
       <input type="text" name="order6" id="result6" value=" " size = "10" readonly>
-      수량<input type="text" name="order6num" id="resultNum6" value=" " size="10" readonly>
-      가격<input type = "text" name = order6price id ="resultPrice6" value= "" size ="10" readonly>원
-  	<br>
+      수량<input type="text" name="order6cup" id="resultNum6" value=" " size="10" readonly>
+      가격<input type = "text" name = order6price id ="resultPrice6" value=" " size ="10" readonly>원
   	
+  	
+  	
+  	<br>
+  	<br>
    <input type="submit" value="결제"><input type="reset" value="취소">
    
     </form>
