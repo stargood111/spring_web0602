@@ -77,6 +77,39 @@ td.td-type06{
 	width:100px;
 	hight:100px; 
 }
+
+td.td-type07{
+	font-size: 17px;
+	color: #5f5f5f;
+	font-family: malgun;
+	font-weight: bold;
+	border-style:solid;
+	border-color:white; 
+	background-color: #e5e5e5;
+	text-align:center;
+	border-width: 1px;
+	width : "300px%";
+}
+td.td-type08{
+	font-size: 25px;
+	color: #5f5f5f;
+	font-family: malgun;
+	font-weight: bold;
+	border-style:solid;
+	border-color:white; 
+	background-color: #e5e5e5;
+	text-align:center;
+	border-width: 1px;
+	width : "300%";
+}
+td.td-type09{
+	font-size: 50px;
+	color: RED;
+	font-family: malgun;
+	font-weight: bold;
+	border-style:none;
+	text-align:center;
+}
 td.memberinfo {
 	font-size: 20px;
 	color: #5f5f5f;

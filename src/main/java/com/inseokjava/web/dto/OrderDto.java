@@ -2,37 +2,68 @@ package com.inseokjava.web.dto;
 
 public class OrderDto {
 
-	private String cname;
-	private int ccup;
-	private int cprice;
-	
+	private String pid;
+	private String pmenu;
+	private String pcup;
+	private String pprice;
+	private String pdate;
+	private String pallprice;
+	private String pnum;
 	public OrderDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public OrderDto(String cname, int ccup, int cprice) {
+	public OrderDto(String pid, String pmenu, String pcup, String pprice, String pdate, String pallprice, String pnum) {
 		super();
-		this.cname = cname;
-		this.ccup = ccup;
-		this.cprice = cprice;
+		this.pid = pid;
+		this.pmenu = pmenu;
+		this.pcup = pcup;
+		this.pprice = pprice;
+		this.pdate = pdate;
+		this.pallprice = pallprice;
+		this.pnum = pnum;
 	}
-	public String getCname() {
-		return cname;
+	public String getPid() {
+		return pid;
 	}
-	public void setCname(String cname) {
-		this.cname = cname;
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
-	public int getCcup() {
-		return ccup;
+	public String getPmenu() {
+		return pmenu;
 	}
-	public void setCcup(int ccup) {
-		this.ccup = ccup;
+	public void setPmenu(String pmenu) {
+		this.pmenu = pmenu;
 	}
-	public int getCprice() {
-		return cprice;
+	public String getPcup() {
+		return pcup;
 	}
-	public void setCprice(int cprice) {
-		this.cprice = cprice;
+	public void setPcup(String pcup) {
+		this.pcup = pcup;
 	}
-	
+	public String getPprice() {
+		return pprice;
+	}
+	public void setPprice(String pprice) {
+		this.pprice = pprice;
+	}
+	public String getPdate() {
+		return pdate;
+	}
+	public void setPdate(String pdate) {
+		this.pdate = pdate;
+	}
+	public String getPallprice() {
+		return pallprice;
+	}
+	public void setPallprice(String pallprice) {
+		this.pallprice = pallprice;
+	}
+	public String getPnum() {
+		return pnum;
+	}
+	public void setPnum(String pnum) {
+		this.pnum = pnum;
+	}
+
 }

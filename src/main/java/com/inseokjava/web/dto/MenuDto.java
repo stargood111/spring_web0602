@@ -27,12 +27,42 @@ public class MenuDto {
 	private String hallprice;
 	
 	private String hdate;
+	private String hid;
 	
 	public MenuDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+
+	public MenuDto(int hnum, String hname1, String hname2, String hname3, String hname4, String hname5, String hname6,
+			String hcup1, String hcup2, String hcup3, String hcup4, String hcup5, String hcup6, String hprice1,
+			String hprice2, String hprice3, String hprice4, String hprice5, String hprice6, String hallprice,
+			String hdate, String hid) {
+		super();
+		this.hnum = hnum;
+		this.hname1 = hname1;
+		this.hname2 = hname2;
+		this.hname3 = hname3;
+		this.hname4 = hname4;
+		this.hname5 = hname5;
+		this.hname6 = hname6;
+		this.hcup1 = hcup1;
+		this.hcup2 = hcup2;
+		this.hcup3 = hcup3;
+		this.hcup4 = hcup4;
+		this.hcup5 = hcup5;
+		this.hcup6 = hcup6;
+		this.hprice1 = hprice1;
+		this.hprice2 = hprice2;
+		this.hprice3 = hprice3;
+		this.hprice4 = hprice4;
+		this.hprice5 = hprice5;
+		this.hprice6 = hprice6;
+		this.hallprice = hallprice;
+		this.hdate = hdate;
+		this.hid = hid;
+	}
+
 	public int getHnum() {
 		return hnum;
 	}
@@ -201,34 +231,13 @@ public class MenuDto {
 		this.hdate = hdate;
 	}
 
-	public MenuDto(int hnum, String hname1, String hname2, String hname3, String hname4, String hname5, String hname6,
-			String hcup1, String hcup2, String hcup3, String hcup4, String hcup5, String hcup6, String hprice1,
-			String hprice2, String hprice3, String hprice4, String hprice5, String hprice6, String hallprice,
-			String hdate) {
-		super();
-		this.hnum = hnum;
-		this.hname1 = hname1;
-		this.hname2 = hname2;
-		this.hname3 = hname3;
-		this.hname4 = hname4;
-		this.hname5 = hname5;
-		this.hname6 = hname6;
-		this.hcup1 = hcup1;
-		this.hcup2 = hcup2;
-		this.hcup3 = hcup3;
-		this.hcup4 = hcup4;
-		this.hcup5 = hcup5;
-		this.hcup6 = hcup6;
-		this.hprice1 = hprice1;
-		this.hprice2 = hprice2;
-		this.hprice3 = hprice3;
-		this.hprice4 = hprice4;
-		this.hprice5 = hprice5;
-		this.hprice6 = hprice6;
-		this.hallprice = hallprice;
-		this.hdate = hdate;
+	public String getHid() {
+		return hid;
 	}
 
-
+	public void setHid(String hid) {
+		this.hid = hid;
+	}
+	
 }
 	

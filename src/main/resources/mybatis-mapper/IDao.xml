@@ -53,12 +53,23 @@
  	<insert id="menuDao">
 		INSERT INTO hmenu(hnum,hname1,hname2,hname3,hname4,hname5,hname6,
 		hcup1, hcup2, hcup3, hcup4, hcup5, hcup6,
-		 hprice1, hprice2, hprice3, hprice4, hprice5, hprice6, hallprice) VALUES 
+		 hprice1, hprice2, hprice3, hprice4, hprice5, hprice6, hallprice , hid) VALUES 
 		 (q_board_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7}, #{param8}, #{param9}, #{param10}, #{param11}, 
-		 #{param12}, #{param13}, #{param14}, #{param15}, #{param16}, #{param17}, #{param18}, #{param19})
+		 #{param12}, #{param13}, #{param14}, #{param15}, #{param16}, #{param17}, #{param18}, #{param19}, #{param20})
 	</insert>
 
-	<insert id = "orderDao">
-		INSERT INTO corder(cname, ccup, cprice) VALUES (#{param1}, #{param2}, #{param3})
+
+	<insert id="orderDao">
+		INSERT INTO porder(pnum,pid,pmenu,pcup,pprice,pallprice) VALUES 
+		 (q_board_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5})
 	</insert>
+
+	<select id="menuOkDao" resultType="com.inseokjava.web.dto.MenuDto">
+		SELECT * FROM hmenu ORDER BY hnum DESC
+	</select>
+
+	<select id="orderlistDao" resultType="com.inseokjava.web.dto.MemberDto">
+		SELECT * FROM hmenu WHERE hid = #{param1}
+	</select> 
+
 </mapper>

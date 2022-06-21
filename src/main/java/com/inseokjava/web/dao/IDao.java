@@ -26,9 +26,16 @@ public interface IDao {
 	public void menuDao(String hname1, String hname2, String hname3,
 			String hname4, String hname5, String hname6 ,int hcup1 ,int hcup2 ,int hcup3
 			,int hcup4, int hcup5, int hcup6,int hprice1,int hprice2,int hprice3
-			,int hprice4,int hprice5,int hprice6,int hallprice);
+			,int hprice4,int hprice5,int hprice6,int hallprice, String hid);
 	
-	public void orderDao(String cname, int ccup, int cprice);
-//	public ArrayList<MenuDto> MenuDao();
+
+	public void orderDao(String pid, String pmenu, int pcup, int pprice, int pallprice);
+	
+	
+	public ArrayList<MenuDto> menuOkDao();
+	
+	public MenuDto orderlistDao(String hid);//게시판 글보기
+
+	
 
 }

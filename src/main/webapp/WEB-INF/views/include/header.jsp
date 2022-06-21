@@ -28,6 +28,7 @@
 			</td>
 			<td width="4%">
 				<% 
+				
 					if(sessionId == null) {
 				%>
 					<a href="join">Join</a>
@@ -40,10 +41,24 @@
 					}
 				%>
 			</td>
-			<td width="6%"><a href="menu">Menu/Order</a></td>
-			<td width="5%"><a href="profile">OrderList</a></td>
-			<td width="6%"><a href="question">Location</a></td>
-			<td width="5%"><a href="contact">Contact</a></td>		
+			<td width="6%"> 
+				<% 
+			
+					if(sessionId != null) {
+				%>
+					<a href="menu">Menu/Order</a>
+				<%
+					} else {
+				%>
+				
+					<a href="nomenu">Menu/Order</a>
+				<%
+					}
+				%>
+				</td>
+			<td width="5%"><a href="orderlist">OrderList</a></td>
+			<td width="6%"><a href="question">Question</a></td>
+			<td width="5%"><a href="contact">Location</a></td>		
 		</tr>
 		<tr>
 			<td height="50" colspan="8" bgcolor="#FFFFFF">&nbsp;</td>

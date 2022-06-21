@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>## LeeGyoJin Profile</title>
+<title>## InSeok Profile</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/span.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/table.css">
 </head>

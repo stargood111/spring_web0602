@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>## LeeGyoJin Profile</title>
+<title>## InSeok Profile</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/span.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/table.css">
 </head>
@@ -13,29 +13,17 @@
 	
 	<center>
 	<table class="t-type01" width="75%" border="0" cellspacing="0" cellpadding="20">
+		<table class="t-type01" width="75%" border="0" cellspacing="0" cellpadding="20" >
 		<tr>
-			<td><span class="title01">DEVELOPER GYOJIN'S PROFILE</span></td>
+			<td><span class="title01">IS COFFEE WELCOME</span></td>
 		</tr>
 		<tr>
-			<td><span class="title02">I'm Gyojin Lee, a developer who wants a development job. Please call me back.</span></td>
+			<td><span class="title02">Ethiopia Beans</span></td>
 		</tr>
 		<tr>
-			<table width="70%" border="0" cellspacing="0" cellpadding="10">
-				<tr>					
-					<td height="500" bgcolor="#D5D5D5" align="center">
-						<table border="0" cellspacing="0" cellpadding="10">							
-							<tr>
-								<td class="td-type02">								
-									안녕하세요 Web Application 백엔드 개발자 이교진입니다.<br>
-									보시고 계신 페이지는 Spring Boot Framework으로 개발되었습니다.<br>
-									웹 서버 백엔드 개발자가 필요하신 분은 <a href="mailto:luckyred@gmail.com">luckyred@gmail.com</a>으로 연락부탁드립니다.
-								</td>
-							</tr>					
-						</table>
-					</td>
-				</tr>			
-			</table>
-		</tr>	
+		</table>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.469176037612!2d126.70312790000001!3d37.4496429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c33d140996365af!2z7J247LKc7KeB7JeF64ql66Cl6rWQ7Jyh7JuQ!5e0!3m2!1sen!2skr!4v1654684565189!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</tr>
 	</table>
 	<center>
 	
